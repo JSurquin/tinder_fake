@@ -1,11 +1,7 @@
-import RootContainer from './navigation/index';
-import { NavigationContainer } from '@react-navigation/native';
+import Navigation from './navigation/index';
 
 export default function App() {
   return (
-    // equivalent à browserRouter
-    <NavigationContainer>
-    <RootContainer/>
-    </NavigationContainer>
+    <Navigation/>
   );
 }

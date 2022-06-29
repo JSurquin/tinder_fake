@@ -1,18 +1,13 @@
-import Home from '../screens/Home';
-import TinderCard from '../screens/TinderCard';
-import Profil from '../screens/Profil';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-const Tab = createBottomTabNavigator();
-
-const Tabs = () => {
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './RootNavigator';
+const Navigation = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Profil" component={Profil} />
-      <Tab.Screen name="TinderCard" component={TinderCard} />
-    </Tab.Navigator>
-  );
+    <NavigationContainer>
+      <RootNavigator/>
+    </NavigationContainer>
+  ) 
 }
 
-export default Tabs;
+
+export default Navigation;
+
